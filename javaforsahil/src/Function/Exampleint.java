@@ -1,6 +1,6 @@
 package Function;
 
-public class Exampleint {
+public class    Exampleint {
     public static void main(String[] args) {
    Integer a = new Integer(7);
         Integer b = new Integer(76);
