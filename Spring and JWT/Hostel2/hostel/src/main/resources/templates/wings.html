@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Details</title>
+</head>
+<body>
+    <h1>List of Wings</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Wing ID</th>
+                <th>Wing Name</th>
+                <th>Wing capacity</th>
+                <th>Wing occupied</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="wing : ${wingsList}">
+                <td th:text="${wing.wing_id}"></td>
+                <td th:text="${wing.wing_name}"></td>
+                <td th:text="${wing.capacity}"></td>
+                <td th:text="${wing.occupied}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

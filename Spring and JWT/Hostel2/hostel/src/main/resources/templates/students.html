@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hostel Details</title>
+</head>
+<body>
+    <h1>List of Students in Wings Hostel</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Room Number</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr th:each="students : ${studentsList}">
+                <td th:text="${students.student_id}"></td>
+                <td th:text="${students.name}"></td>
+                <td th:text="${students.gender}"></td>
+                <td th:text="${students.age}"></td>
+                <td th:text="${students.phone_number}"></td>
+                <td th:text="${students.email}"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
